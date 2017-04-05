@@ -1,3 +1,6 @@
+function gp(){
+   git pull
+}
 function gb(){
    git branch
 }
@@ -8,7 +11,7 @@ function gac(){
    git push
 }
 
-function acp() {
+function gacp() {
     git add .
     git commit -m"$1"
     git push
