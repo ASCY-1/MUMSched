@@ -1,9 +1,9 @@
-function a() {
+function b() {
     git add .
     git commit -m"$1"
     git push
 }
 
-function b(){
- echo "janis";
+function a(){
+   git status;
 }
