@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Apr 07 19:17:17 CDT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015b-4aec-1428-000009eb2848 
+on database directory memory:/Users/cleave/Documents/eclipse_workspace/MUMSched/testdb with class loader sun.misc.Launcher$AppClassLoader@2a139a55 
+Loaded from file:/Users/cleave/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_112-b16
+user.dir=/Users/cleave/Documents/eclipse_workspace/MUMSched
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.10.5
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
