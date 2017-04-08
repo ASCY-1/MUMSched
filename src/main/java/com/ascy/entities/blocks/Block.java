@@ -16,7 +16,7 @@ public class Block {
 	private String blockName;
 	private String blockDetails;
 	
-	private List<Section> sections;
+//	private List<Section> sections;
 	
 	public Block(){
 		
