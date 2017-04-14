@@ -1,5 +1,6 @@
 package com.ascy.controllers;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,19 +19,24 @@ public class BlockController {
 	@Autowired
 	private BlockService blockService;
 	
+	@RequestMapping("/home33")
+	public String index() throws IOException{
+		return "home";
+	}
 	@RequestMapping("/block")
-	public List<Block> getAllBlock(){
+	public List<Block> getAllBlock() throws IOException{
 		return blockService.getAllBlock();
 	}
+	
 	@RequestMapping("/block/{blockId}")
 	public Block getBlock(@PathVariable("blockId") String blockId){
 		return blockService.getBlock(blockId);
-		
 	}
 	
 	@RequestMapping(method=RequestMethod.POST, value="block")
-	public void addBlock(@RequestBody Block block){
+	public boolean addBlock(@RequestBody Block block) throws IOException{
 		blockService.addBlock(block);
+		return true;
 	}
 	@RequestMapping(method=RequestMethod.PUT, value="block")
 	public void updateBlock(@RequestBody Block block){

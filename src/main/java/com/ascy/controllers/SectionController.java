@@ -23,7 +23,7 @@ public class SectionController {
 	private BlockRepository blockRepository; 
 	
 	@RequestMapping("/section")
-	public List<Section> getAllSection(){
+	public List<Section> getAllSections(){
 		return sectionService.getAllSection();
 	}
 	@RequestMapping("/section/{sectionId}")
@@ -33,7 +33,7 @@ public class SectionController {
 	
 	@RequestMapping(method=RequestMethod.POST, value="section")
 	public void addSection(@RequestBody Section section){
-		section.setBlock(blockRepository.findAllByBlockId(section.getBlockId()).get(0));
+//		section.setBlock(blockRepository.findAllByBlockId(section.).get(0));
 		sectionService.addSection(section);
 	}
 	@RequestMapping(method=RequestMethod.PUT, value="section")

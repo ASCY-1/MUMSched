@@ -1,15 +1,10 @@
 package com.ascy.entities.sections;
 
-
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.ascy.entities.blocks.Block;
-import com.ascy.entities.blocks.BlockRepository;
 
 @Entity
 public class Section {
@@ -19,14 +14,9 @@ public class Section {
 	private String sectionName;
 	private String blockId;
 	
-
-
 	//	@Embedded
 	@ManyToOne
 	private Block block;
-	
-//	@Autowired
-//	private BlockRepository blockRepository; 
 	
 	public Section(){
 		
@@ -37,7 +27,7 @@ public class Section {
 		this.sectionId = sectionId;
 		this.sectionName = sectionName;
 		
-		this.block = new Block(blockId, "Block X");
+		this.block = new Block(blockId, "Block X", "Block X", "Block X");
 	}
 	
 	public String getSectionId() {

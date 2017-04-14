@@ -16,9 +16,15 @@ public class SectionService {
 	private SectionRepository sectionRepository;
 
 	public List<Section> getAllSection(){
-		List<Section> section = new ArrayList<>();
-		sectionRepository.findAll().forEach(section::add);
-		return section;
+		List<Section> sections = new ArrayList<>();
+		
+//		sectionRepository.findAll().forEach(sections::add);
+		sectionRepository.findAll().forEach(sections::add);
+		
+//		for(Section section: sections){
+//			System.out.println("--------------"+section.);
+//		}
+		return sections;
 	}
 
 	public Section getSection(String sectionId) {
